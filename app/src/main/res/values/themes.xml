@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AADK3SocialApp" parent="Theme.Material3.DayNight.NoActionBar"/>
+
+    <style name="Theme.AADK3SocialApp" parent="Base.Theme.AADK3SocialApp" />
+
+    <style name="Theme.AppCompat.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/SecondaryColor</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.AADK3SocialApp</item>
+    </style>
+</resources>

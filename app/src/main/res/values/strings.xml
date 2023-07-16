@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AADK3-Social-App</string>
+    <string name="app_logo_toolbar">App Logo Toolbar</string>
+    <string name="social_app">Social App</string>
+    <string name="messages">Messages</string>
+</resources>
