@@ -13,7 +13,13 @@ class AuthActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        installSplashScreen()
+//        TODO 3: Call this inbuilt method to show the Splashscreen
+        installSplashScreen().apply {
+            setKeepOnScreenCondition {
+                true
+            }
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(authBinding.root)
 

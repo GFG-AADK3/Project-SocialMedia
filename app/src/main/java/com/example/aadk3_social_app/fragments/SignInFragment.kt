@@ -2,10 +2,13 @@ package com.example.aadk3_social_app.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.example.aadk3_social_app.R
@@ -47,6 +50,20 @@ class SignInFragment: Fragment() {
                 errorMessage = "Password Invalid"
             )
 
+//            if (signInBinding.tietUsername.text.toString().isBlank()) {
+//                signInBinding.tilUsername.error = "Username Invalid"
+//            }
+//
+//            signInBinding.tietUsername.addTextChangedListener(object : TextWatcher {
+//                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+//
+//                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+//                    signInBinding.tilUsername.error = null
+//                }
+//
+//                override fun afterTextChanged(s: Editable?) {}
+//            })
+
             if (isValid) {
                 signIn(
                     signInBinding.tietUsername.text.toString(),
@@ -55,6 +72,9 @@ class SignInFragment: Fragment() {
             } else {
                 return@setOnClickListener
             }
+
+//            val s = "Android"
+//            val l = s.calculate() // 14
         }
     }
 
@@ -68,3 +88,10 @@ class SignInFragment: Fragment() {
             .addOnFailureListener { /* Show error */ }
     }
 }
+
+//fun String.calculate(): Int {
+//    return this.length*2
+//}
+
+// AuthAct -> SocialAct (onBackPressed)
+// SocialAct

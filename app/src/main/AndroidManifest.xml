@@ -18,6 +18,7 @@
         <activity
             android:name=".SocialActivity"
             android:exported="false" />
+<!--        TODO: 2 Add the Splash Theme to the Launching Activity-->
         <activity
             android:name=".AuthActivity"
             android:exported="true"

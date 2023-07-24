@@ -4,6 +4,7 @@
 
     <style name="Theme.AADK3SocialApp" parent="Base.Theme.AADK3SocialApp" />
 
+<!--    TODO 1: Add the custom Splashscreen   -->
     <style name="Theme.AppCompat.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/SecondaryColor</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
